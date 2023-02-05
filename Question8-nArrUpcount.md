@@ -25,9 +25,10 @@ public static int nUpcount(int[] arr, int n) {
     int sum = 0;
     for (int i = 0; i < arr.length; i++) {
         sum += arr[i];
-        if (sum <= n) continue;
-        count++;
-        sum = arr[i];
+        if (sum >= n) {
+            count++;
+            sum = arr[i];
+        }
     }
     return count;
 }
