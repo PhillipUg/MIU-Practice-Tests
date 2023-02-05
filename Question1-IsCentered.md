@@ -5,35 +5,21 @@ of the middle element. Note that only arrays with an odd number of elements
 have a middle element. Write a function that accepts an integer array and
 returns 1 if it is a centered array, otherwise it returns 0.
 Examples:
- -----------------------|-----------------------------------------------------------------------
-| if the input array is | return                                                                |
-|-----------------------|-----------------------------------------------------------------------|
-| {1,2,3,4,5}           | 0 (the middle element 3 is not strictly less than all other elements) |
-|-----------------------|-----------------------------------------------------------------------|
-| {3,2,1,4,5}           | 1 (the middle element 1 is strictly less than all other elements)     |
-|-----------------------|-----------------------------------------------------------------------|
-| {3,2,1,4,1}           | 0 (the middle element 1 is not strictly less than all other elements) |
-|-----------------------|-----------------------------------------------------------------------|
-| {1,2,3,4}             | 0 (no middle element)                                                 |
-|-----------------------|-----------------------------------------------------------------------|
-| {}                    | 0 (no middle element)                                                 |
-|-----------------------|-----------------------------------------------------------------------|
-| {10}                  | 1 (the middle element 10 is strictly less than all other elements)    |
- -----------------------------------------------------------------------------------------------
+
+if the input array is | return                                                                
+-----------------------|-----------------------------------------------------------------------
+ {1,2,3,4,5}           | 0 (the middle element 3 is not strictly less than all other elements) 
+ {3,2,1,4,5}           | 1 (the middle element 1 is strictly less than all other elements)     
+ {3,2,1,4,1}           | 0 (the middle element 1 is not strictly less than all other elements) 
+ {1,2,3,4}             | 0 (no middle element)                                                 
+ {}                    | 0 (no middle element)                                                 
+ {10}                  | 1 (the middle element 10 is strictly less than all other elements)
  
  
- <details>
-<summary>TITLE</summary>
-
-BODY CONTENT
-
-</details>
- 
-
 <details>
   <summary>See Answer</summary>
   
-    ```js
+ ```ruby
     public static int isCenteredArray(int[] arr) {
       int n = arr.length;
       if (n % 2 == 0) {
@@ -51,10 +37,11 @@ BODY CONTENT
       }
       return 1;
     }
-    ```
+ ```
   
    ### Explanation
-     1. First, the function checks if the length of the input array arr is even or not. If the length is even, the function immediately returns 0 as   centered arrays can only have an odd number of elements.
+ 
+   1. First, the function checks if the length of the input array arr is even or not. If the length is even, the function immediately returns 0 as   centered arrays can only have an odd number of elements.
 
    2. If the length of the array is odd, the code then calculates the index of the middle element and stores it in the middle variable.
 
