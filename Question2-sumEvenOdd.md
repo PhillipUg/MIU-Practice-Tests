@@ -16,7 +16,7 @@ if input array is     | return
  {}                    | 0                                                                     
 
 <details>
-<summary>TITLE</summary>
+<summary>See Answer</summary>
 
 ```ruby
  
