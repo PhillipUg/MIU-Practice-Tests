@@ -20,3 +20,30 @@ int isSym(int[] a)
 
 if you are programming in C or C++, the function is:
 int isSym(int a[], int len) where len is the number of elements in the array.
+
+
+<details>
+<summary>See Answer</summary>
+
+```ruby
+public static int isSym(int[] arr) {
+    int n = arr.length;
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        if (arr[left] % 2 == arr[right] % 2) {
+            left++;
+            right--;
+        } else {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+```
+
+### Explanation
+
+This function uses two pointers, left and right, to iterate over the array from both ends towards the middle. If at any point the parity (odd/even) of the elements at the left and right indices are different, the function immediately returns 0 as the array is not symmetric. If the loop completes, it means all elements have the same parity from both ends, so the function returns 1.
+
+</details>
