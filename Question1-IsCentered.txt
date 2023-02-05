@@ -20,6 +20,15 @@ Examples:
 |-----------------------|-----------------------------------------------------------------------|
 | {10}                  | 1 (the middle element 10 is strictly less than all other elements)    |
  -----------------------------------------------------------------------------------------------
+ 
+ 
+ <details>
+<summary>TITLE</summary>
+
+BODY CONTENT
+
+</details>
+ 
 
 <details>
   <summary>See Answer</summary>
